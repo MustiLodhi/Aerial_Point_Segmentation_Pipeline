@@ -16,6 +16,30 @@ Accurate extraction of building footprints and infrastructure from aerial imager
 * **Loss Function:** Partial Multiclass Focal Loss, which masks background pixels to prevent unannotated regions from skewing the gradient calculations.
 * **Experiments:** Evaluated model convergence and boundary precision under "Low Sparsity" (20 points/class) and "High Sparsity" (100 points/class) scenarios.
 
+## 📊 Inference Visualizations
+
+The panels below illustrate the model performance on test data.
+
+**Columns (Left to Right):** RGB Input | Sparse Annotations | Dense Ground Truth | Model Prediction
+
+### Low Sparsity: 20 Points Per Class
+<p align="center">
+  <img src="1.png" width="80%">
+  <br>
+  <img src="2.png" width="80%">
+  <br>
+  <img src="3.png" width="80%">
+</p>
+
+### High Sparsity: 100 Points Per Class
+<p align="center">
+  <img src="4.png" width="80%">
+  <br>
+  <img src="5.png" width="80%">
+  <br>
+  <img src="6.png" width="80%">
+</p> 
+
 ## 🔑 Setup & Authentication
 
 This pipeline programmatically downloads the dataset from Hugging Face. To run the notebook in Google Colab, you must provide your own Hugging Face Access Token.
